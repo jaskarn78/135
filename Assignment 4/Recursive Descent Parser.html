@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+-->
+
+<head>
+
+	<title>Recursive Descent Parser in PHP</title>
+
+</head>
+
+
+
+<body>
+
+	<a href="http://gaia.ecs.csus.edu/~jagpalj/index.html">Home</a>
+
+	<hr>
+
+	<h1> <center>Recursive Descent Parser in PHP!</center></h1>
+
+	<p>
+
+		<center>
+
+		Please enter an expression derivable from the following grammar and that also
+
+		ends in the symbol '$'.
+
+		<br>
+
+		EXP    ::= EXP  + TERM   | EXP - TERM    | TERM <br>
+
+       TERM   ::= TERM * FACTOR | TERM / FACTOR | FACTOR <br>
+
+       FACTOR ::= ( EXP ) | DIGIT <br>
+
+       DIGIT  ::= 0 | 1 | 2 | 3<br>
+
+	   
+
+		Valid Example: (3+2)-1$<br>
+
+		Invalid Example: 5-)-2*7$
+
+	    </center>
+
+	</p>
+
+	
+
+	
+
+	<center><form action="rdp.php" method="post">
+
+	<input type="text" name="userInput" />
+
+	<input type="submit" name="sub" value="submit" />
+
+	</form></center>
+
+	
+
+	<br><br>
+
+	
+
+</body>
+
+</html>

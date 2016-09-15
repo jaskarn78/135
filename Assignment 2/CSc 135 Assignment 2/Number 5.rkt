@@ -1,0 +1,11 @@
+#lang racket
+(define (pMinMax lst)
+  (if (null? lst)
+      '()
+      (let helper ((lst (cdr lst)) (min (car lst)) (max (car lst)))
+        (if (null? lst)
+            (list min max)
+            (let ((c (car lst)))
+              (helper (cdr lst)
+                      (if (< c min) c min)
+                      (if (> c max) c max)))))))
